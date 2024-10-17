@@ -1,0 +1,140 @@
+.section-portfolio-photos {
+    background-color: white;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  
+.section-portfolio-photos h2 {
+    color: #242424;
+    margin-bottom: 80px;
+  }
+  
+.grid-landscape img,
+.grid-portraits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+.grid-landscape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 15px;
+    padding-bottom:80px ;
+  }
+
+.paysage1 {
+    grid-column: 2/4;
+    grid-row: 1;
+} 
+
+.paysage2 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.paysage3 {
+    grid-column: 1 / 3;
+}
+
+.paysage4 {
+    grid-column: 1 / 3;
+}
+
+.paysage5 {
+    grid-column: 2 / 4;
+    grid-row: 3 ;
+}
+
+.paysage7 {
+    grid-row: 3;
+}
+
+.paysage9 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid-portraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 400px 400px ;
+    gap: 15px;
+  }
+
+.portrait1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.portrait2 {
+    grid-column: 1 ;
+}
+
+.portrait3 {
+    grid-column: 1 ;
+}
+
+.portrait5 {
+    grid-column: 3/5;
+    grid-row: 1;
+}
+
+.conteneur-photo-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .conteneur-photo-link:hover .photo-hover {
+    opacity: 70%;
+  }
+
+  @media screen and (max-width: 996px) {
+    .grid-landscape {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  
+    .grid-portraits {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .section-portfolio-photos {
+      display: grid;
+      justify-content: center;
+      width: 100%;
+      padding : 0px;
+      padding-top:80px ;
+    }
+  }
